@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MedEcard-Doctor</string>
+    <string name="patients">Patients</string>
+    <string name="search">Search</string>
+</resources>

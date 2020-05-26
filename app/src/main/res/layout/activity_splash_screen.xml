@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreenActivity"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/app_theme"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/app_logo_text"/>
+
+    <TextView
+        android:id="@+id/app_theme_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DOCTOR APP"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:fontFamily="monospace"/>
+
+</LinearLayout>

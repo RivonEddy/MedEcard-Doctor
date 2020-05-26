@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/recycler_cons_drec"
+    android:paddingTop="20dp"
+    android:paddingBottom="15dp"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"
+    android:orientation="vertical"
+    android:background="@drawable/transparent_bg_with_border">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/cons_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Date Here"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/cons_hosp_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hospital Address Here"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/cons_doc_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dr's Name Here"
+                android:textSize="15sp"
+                android:textColor="@color/colorAccent1"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_arrow_drop_down_black_24dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/cons_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Record Type"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/cons_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status Here"
+            android:textColor="@color/red"
+            android:textAlignment="textEnd"
+            android:textStyle="bold"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+</LinearLayout>

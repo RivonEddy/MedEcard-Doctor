@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CreateConsultationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="70dp"
+        android:background="@drawable/bottom_border">
+
+        <ImageView
+            android:id="@+id/back_btn_cons"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_navigate_back_24dp"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Consultation"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_save_black_24dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_send_black_24dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-60dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:id="@+id/drop_down_conslt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Clinical Notes"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_weight="1"/>
+
+            <ImageButton
+                android:id="@+id/drop_btn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="-13dp"
+                android:backgroundTint="@color/transparent"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:hint="Presenting Complaints"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:background="@drawable/white_edit_text"
+            android:layout_marginBottom="20dp"
+            android:textSize="15sp"/>
+
+        <LinearLayout
+            android:id="@+id/detailed_clinical_records"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:hint="History of Presenting Complaints"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@drawable/white_edit_text"
+                android:layout_marginBottom="20dp"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:hint="Past Medical History"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@drawable/white_edit_text"
+                android:layout_marginBottom="20dp"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:hint="Review of Systems"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@drawable/white_edit_text"
+                android:layout_marginBottom="20dp"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="b) Physical Examinations"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:hint="General Assessment"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@drawable/white_edit_text"
+                android:layout_marginBottom="20dp"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:hint="Cardiovascular System"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@drawable/white_edit_text"
+                android:layout_marginBottom="20dp"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:hint="Chizt"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@drawable/white_edit_text"
+                android:layout_marginBottom="20dp"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:hint="Abdominal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@drawable/white_edit_text"
+                android:layout_marginBottom="20dp"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:hint="Central Nervous System"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@drawable/white_edit_text"
+                android:layout_marginBottom="20dp"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:hint="Muscular Skeletal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@drawable/white_edit_text"
+                android:layout_marginBottom="20dp"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="c) Lab Results Available"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:hint="Lab Results Available"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@drawable/white_edit_text"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Investigations"
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <EditText
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:background="@drawable/white_edit_text"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diagnosis"
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:background="@drawable/white_edit_text"
+            android:layout_marginBottom="10dp"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Treatment"
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:background="@drawable/white_edit_text"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
