@@ -44,6 +44,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:tabBackground="@drawable/indicator_selector"></android.support.design.widget.TabLayout>
 
+    <Button
+        android:id="@+id/btn_getStarted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/in_app_butt"
+        android:padding="15dp"
+        android:text="Get Started"
+        android:textColor="@color/light_grey"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/screen_viewpager"
+        tools:ignore="MissingConstraints" />
+
     <TextView
         android:id="@+id/next_btn"
         android:layout_width="match_parent"
@@ -58,16 +73,4 @@
         tools:layout_editor_absoluteX="332dp"
         tools:layout_editor_absoluteY="21dp"
         tools:ignore="MissingConstraints" />
-
-    <Button
-        android:visibility="invisible"
-        android:id="@+id/btn_getStarted"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Get Started"
-        android:textColor="@color/light_grey"
-        android:padding="15dp"
-        android:background="@drawable/in_app_butt"
-        tools:ignore="MissingConstraints"
-        android:gravity="center"/>
 </android.support.constraint.ConstraintLayout>
